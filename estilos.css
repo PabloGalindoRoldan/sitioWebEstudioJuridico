@@ -32,7 +32,6 @@ header{
     transform: scale(0.94);
 }
 
-
     .fadein {
     display: inline-block;
     opacity: 0;
@@ -76,7 +75,6 @@ header{
         transform: scale(1);
     }
 }
-
 
 .header__logo__title{
     letter-spacing: 1px;
@@ -201,7 +199,6 @@ main{
     transform: scale(1.2);
     transition: all 0.8s ease-in-out;
 }
-
 
 .tarjeta__texto{
     text-align: justify;
@@ -532,7 +529,6 @@ button:hover{
         width: 100%;
     }
 
-
     .header__logo{
         width: 50vw;
     }
@@ -553,8 +549,8 @@ button:hover{
         align-items: center;
         height: auto;
         width: 100%;
-    }
-
+    }   
+    
     .tarjeta__contenido{
         width: 80%;
         height: 100vh;
