@@ -29,13 +29,54 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    transform: scale(0.94);
+}
+
+
+    .fadein {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.fadein1 {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.fadein2 {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.fadein3 {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+        100% {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 .header__logo__img{
     padding: 10px;
     margin-right: 50px;
     margin-left: 50px;
+    animation: scalelogo 3s;
 }
+
+@keyframes scalelogo {
+    0% {
+    transform: scale(0.5);
+    }
+    30%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 .header__logo__title{
     letter-spacing: 1px;
@@ -88,12 +129,23 @@ main{
     width: 100%;
     font-size: 1.4em;
     text-align: center;
-    animation: loadin 0.8s ease-in-out;
+    animation: loadinenc 0.8s ease-in-out;
+}
+
+@keyframes loadinenc{
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 100;
+    }
 }
 
 @keyframes loadin{
     0% {
-        transform: translateX(-50px);
+        transform: translateX(-30px);
         opacity: 0;
     }
     100%{
@@ -141,7 +193,7 @@ main{
     object-fit: cover;
     object-position: center;
     filter: grayscale(100%);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .tarjeta__contenido:hover .tarjeta__img{
