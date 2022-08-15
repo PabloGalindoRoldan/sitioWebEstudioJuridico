@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Estudio Juridico - Servicios</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="https://img.icons8.com/ios-filled/50/000000/scales--v1.png" alt="icono_balanza" class="header__logo__img"/>
+            <h1 class="header__logo__title">Estudio Juridico</h1>
+        </div>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./ubicacion.html">Ubicacion</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="../index.html">Home</a></li>
+                <li><a class="menu__item" href="#">Servicios</a></li>
+                <li><a class="menu__item" href="./contacto.html">Contacto</a></li>
+                <li><a class="menu__item" href="./ubicacion.html">Ubicacion</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="servicios__contenedor">
+        <div class="item1">
+            <h2>Nuestros Servicios</h2>  
+        </div>
+        <div class="item2">
+            <h3>Consultas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, nihil molestiae. Perspiciatis magnam laudantium temporibus.</p>
+            <form action="formulario.php" method="post">
+                <label for="email">Escribinos un Email</label>
+                <input type="email" name="email" placeholder="ejemplo@gmail.com" required>
+                <textarea name="consulaTextarea" id="consulta__textarea" placeholder="Escribinos tu consulta aca" required></textarea>
+                <input type="submit" class="button" id="consulta__button">
+            </form>
+        </div>
+        <div class="item3">
+            <h3>Cotizaciones</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatibus modi nesciunt labore saepe repudiandae?</p>
+            <form action="formulario.php" method="post">
+                <label for="email">Indicanos tu Email</label>
+                <input type="email" name="email" placeholder="ejemplo@gmail.com" required>
+                <label for="tipodeproceso">Indicanos el tipo de proceso por el que queres una cotizacion:</label>
+                <div class="opciones">
+                    <div>
+                        <input type="radio" name="opcion" id="laboral">
+                        <label for="laboral">Laboral</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opcion" id="familia">
+                        <label for="familia">Familia</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opcion" id="penal">
+                        <label for="penal">Penal</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opcion" id="administrativo">
+                        <label for="administrativo">Administrativo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opcion" id="previsional">
+                        <label for="previsional">Previsional</label>
+                    </div>
+                </div>
+                <input type="submit" class="button" id="consulta__button">                
+            </form>
+        </div>
+        <div class="item4">
+            <h3>Patrocinio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, neque. Mollitia hic tempora eos quam.</p>
+            <form action="formulario.php" method="post">
+                <label for="email">Escribinos un Email</label>
+                <input type="email" name="email" placeholder="ejemplo@gmail.com" required>
+                <label for="elegi">Indicanos a que abogado desearias contratar</label>
+                <select name="abogados" id="abogados">
+                    <option value="Juan">Dr. Juan Aristeguy</option>
+                    <option value="Pablo">Pablo</option>
+                    <option value="Cristian">Cristian</option>
+                    <option value="Luciana">Luciana</option>
+                    <option value="Lila">Lila</option>
+                    <option value="Rafael">Rafael</option>
+                    <option value="Juan2">Juan 2</option>
+                    <option value="Bartolito">Bartolito</option>
+                </select>
+                <input type="submit" value="enviar" class="button">
+            </form>
+        </div>
+        <div class="item5">
+            <h2>Nuestros Horarios</h2>
+        </div>
+        <div class="item6">
+            <div class="tablacontenedor tablaitem1"><span>Lunes</span></div>
+            <div class="tablacontenedor tablaitem2"><span>Martes</span></div>
+            <div class="tablacontenedor tablaitem3"><span>Miercoles</span></div>
+            <div class="tablacontenedor tablaitem4"><span>Jueves</span></div>
+            <div class="tablacontenedor tablaitem5"><span>Viernes</span></div>
+            <div class="tablacontenedor tablaitem6"><span>Sabados</span></div>
+            <div class="tablacontenedor tablaitem7"><span>Domingos</span></div>
+            <div class="tablacontenedor tablaitem8"><span>8 a 12</span></div>
+            <div class="tablacontenedor tablaitem9"><span>Cerrado</span></div>
+            <div class="tablacontenedor tablaitem10"><span>9 a 21</span></div>
+            <div class="tablacontenedor tablaitem11"><span>Cerrado</span></div>
+            <div class="tablacontenedor tablaitem12"><span>9 a 21</span></div>
+            <div class="tablacontenedor tablaitem13"><span>Cerrado</span></div>
+        </div>
+        <div class="item7">
+            <h2>Preguntas frecuentes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At non maiores aperiam veniam eius accusantium ducimus sit saepe sunt odio fugit, nesciunt nostrum laborum asperiores reprehenderit dolor iusto error voluptates praesentium culpa, repellendus hic ratione repellat! Recusandae, similique! Officiis esse facilis voluptatum unde dolores fuga reiciendis repellendus in quibusdam impedit.</p>
+        </div>
+        <div class="item8">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0nuxNyvf4Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+        </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__icon__container">
+        <a href="https://es-la.facebook.com/"><img  class="footer__icon" src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png" alt="icono FB"/></a>
+        <a href="https://twitter.com/?lang=es"><img   class="footer__icon" src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="icono TW"/></a>
+        <a href="https://ar.linkedin.com/"><img  class="footer__icon" src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="icono LI"/></a>
+        </div>
+        <div class="footer__list__container">
+            <ul class="footer__list" type="circle">
+                <li>Telefono: 012 3456 7890</li>
+                <li>Mail: asd@asd.com</li>
+                <li>Direccion: Balcarce 50 C.A.B.A.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
