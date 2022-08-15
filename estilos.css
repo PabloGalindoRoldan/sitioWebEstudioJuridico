@@ -7,7 +7,7 @@
 body{
     font-family: PT Sans;
 }
- 
+
 header{
     background-color: #c1ced6;
     position: fixed;
@@ -193,7 +193,7 @@ main{
     object-fit: cover;
     object-position: center;
     filter: grayscale(100%);
-    transition: transform 0.8s;
+    transition: all 0.8s;
 }
 
 .tarjeta__contenido:hover .tarjeta__img{
